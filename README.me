@@ -3,7 +3,8 @@
 
 #if UNITY_EDITOR
 
-    [OnValueChanged(nameof(UpdateNextSceneAsset))]
+    // Enable this line if you use Odin Inspector
+    // [OnValueChanged(nameof(UpdateNextSceneAsset))]
     public UnityEditor.SceneAsset SceneAsset;
 
     private void OnEnable()
