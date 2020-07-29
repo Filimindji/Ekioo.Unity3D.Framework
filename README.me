@@ -6,16 +6,8 @@
     [OnValueChanged(nameof(UpdateNextSceneAsset))]
     public UnityEditor.SceneAsset SceneAsset;
 
-    private void UpdateSceneRef()
-    {
-        if (SceneAsset != null)
-            SceneRef = SceneData.Create(SceneAsset);
-        else
-            SceneRef = null;
-    }
-
     private void OnEnable()
     {
-        UpdateSceneRef();
+        SceneRef = SceneData.UpdateSceneRef(SceneAsset);
     }
 #endif
