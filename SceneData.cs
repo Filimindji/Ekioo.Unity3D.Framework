@@ -4,7 +4,7 @@ using System.Threading.Tasks;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-namespace ConceptEvasion.Common.Data
+namespace Ekioo.Common.Data
 {
     [Serializable]
     public class SceneData
@@ -41,7 +41,7 @@ namespace ConceptEvasion.Common.Data
             }
             else
             {
-                Debug.Log("Impossible de charger cette scène");
+                Debug.Log("Impossible de charger cette scÃ¨ne");
                 return false;
             }
         }
@@ -55,7 +55,7 @@ namespace ConceptEvasion.Common.Data
             }
             else
             {
-                Debug.Log("Impossible de décharger cette scène");
+                Debug.Log("Impossible de dÃ©charger cette scÃ¨ne");
                 return false;
             }
         }
